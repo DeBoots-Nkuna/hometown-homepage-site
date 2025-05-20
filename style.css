@@ -1,0 +1,208 @@
+/* Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557 */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.homepage {
+}
+
+/* hero section */
+.hero-section {
+  background-image: url('images/pretoria-city.jpg');
+  background-size: cover;
+  height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hero texts */
+#hero-title {
+  color: white;
+  background-color: #a8dadc;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+#hero-summary {
+  color: white;
+  background-color: #1d3557;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* activity section */
+.activity-section {
+  background-color: #f1faee;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+/* attribution lins */
+
+.hover-info a {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 10px;
+  color: #1d3557;
+}
+
+/* link hovering */
+.hover-info a:hover {
+  text-decoration: underline;
+}
+
+/* activity title */
+.activity-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f1faee;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* hovering information */
+.hover-info {
+  margin-top: 5px;
+  font-size: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  animation: none;
+  height: 0;
+  overflow: hidden;
+  padding: 5px 0 5px 0;
+}
+
+/* triggering hover information on parent container */
+.activities:hover .hover-info {
+  animation: fadeInOut 4s forwards;
+  height: auto;
+}
+
+/* key frames */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* activity summary */
+.activity-summary {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+/* activity subtitle */
+.activity-sub-title {
+  padding: 30px 0 0 0;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* activities div */
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* activity images */
+.activity-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+/* tour guide */
+
+/* tour guide container */
+.tour-guide {
+  display: flex;
+  background-color: #a8dadc;
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  margin: 0 auto 0 auto;
+  border-bottom: 8px solid #1d3557;
+  border-bottom-left-radius: 5px;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+/* tour image */
+
+#tour-guide-image {
+  width: 200px;
+  border-radius: 10%;
+}
+
+/* tour title */
+#tour-guide-title {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* tour summary */
+#tour-guide-summary {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* tour guide name */
+#tour-guide-name {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* footer */
+footer {
+  margin-top: 4em;
+}
+/* attribution */
+.attribution {
+  font-size: 11px;
+  color: gray;
+}
+
+/* link */
+
+.attribution a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+/* hovering link */
+
+.attribution a:hover {
+  text-decoration: underline;
+}
